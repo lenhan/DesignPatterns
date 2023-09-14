@@ -3,13 +3,13 @@ package factory.abstr;
 public class MammalsFactory extends AnimalFactory{
 
 	@Override
-	public Animal create(String animal) {
+	public Animal create(AnimalName animalName) {
 		
-		animal = animal.toUpperCase();
+		
 
-		if(animal.equals("CAT")){
+		if(animalName  == AnimalName.CAT){
 			return new Cat();
-		}else if(animal.equals("FOX")){
+		}else if(animalName  == AnimalName.FOX){
 			return new Fox();
 		}
 		return null;

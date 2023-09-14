@@ -6,12 +6,12 @@ public class Main {
 		
 		AnimalFactory factory = new BirdsFactory();
 		
-		Animal owl = factory.create("Owl");
+		Animal owl = factory.create(AnimalName.OWL);
 		owl.display();
 
 		factory = new MammalsFactory();
 		
-		Animal fox = factory.create("Fox");
+		Animal fox = factory.create(AnimalName.FOX);
 		fox.display();
 
 	}
